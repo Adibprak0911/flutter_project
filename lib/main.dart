@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
         elevation: 10,
         shadowColor: Colors.orange,
         title: Text(
-          'Diet Planner',
+          'Flash Cards',
           style: TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
@@ -30,41 +30,35 @@ class Home extends StatelessWidget {
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2),
         children: [Container(
-            decoration:
-            BoxDecoration(borderRadius: BorderRadius.circular(20),
-                color: Colors.blueGrey),
-            margin: EdgeInsets.all(8),
-            child: Expanded(
-              child: Column(
-                children: <Widget>[
-                  Align(
-                    alignment: Alignment(0.3, -0.9),
-                    child: Text('Carbs requirement ', style: TextStyle(
-                      fontSize: 20.0, fontFamily: 'Indie',
-                      fontWeight: FontWeight.bold,),
-                    ),),
-                  Align(
-                    alignment: Alignment(-0.9, -0.5),
-                    child: Text("Calories: 45%-65%",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
-                  Align(
-                    alignment: Alignment(-0.9, 0.4),
-                    child: Text(" Grams per day: 225g-325g",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                  ),
-                  Align(
-                    alignment: Alignment(-0.9, 0.3),
-                    child: Text(" Ex: Bananas, Bread, Sweet Potato",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                  ),
-                  Align(
+          decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(20),
+              color: Colors.blueGrey),
+          margin: EdgeInsets.all(8),
+          child: Expanded(
+            child: Column(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment(0.3, -0.9),
+                  child: Text('What is the capital of India? ', style: TextStyle(
+                    fontSize: 20.0, fontFamily: 'Indie',
+                    fontWeight: FontWeight.bold,),
+                  ),),
+                Align(
+                  alignment: Alignment(-0.9, -0.5),
+                  child: Text("Delhi",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
+                Align(
+                  child: Container(
                     alignment: Alignment.bottomRight,
                     child: MediaQuery.removePadding(context: context,
                         child: IconButton(
                           icon: Icon(Icons.delete), iconSize: 30,
                           onPressed: () {},
                         )),
-                  )
-                ],
-              ),
+                  ),
+                )
+              ],
             ),
+          ),
         ),
 
 
@@ -77,28 +71,22 @@ class Home extends StatelessWidget {
                 children: <Widget>[
                   Align(
                     alignment: Alignment(0.3, -0.9),
-                    child: Text('Protein requirement ', style: TextStyle(
+                    child: Text('What is the chemical symbol for Sodium ', style: TextStyle(
                       fontSize: 20.0, fontFamily: 'Indie',
                       fontWeight: FontWeight.bold,),
                     ),),
                   Align(
                     alignment: Alignment(-0.9, 0.9),
-                    child: Text("Calories: 10%-35%",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
+                    child: Text("Na",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
                   Align(
-                    alignment: Alignment(-0.9, 0.3),
-                    child: Text(" Grams per day: 50g-70g",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                  ),
-                  Align(
-                    alignment: Alignment(-0.9, 0.1),
-                    child: Text(" Ex: Egg, Pulses and nuts",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                  ),
-                  Align(
-                    alignment: Alignment(1.0,2.0),
-                    child: MediaQuery.removePadding(context: context,
-                        child: IconButton(
-                          icon: Icon(Icons.delete), iconSize: 30,
-                          onPressed: () {},
-                        )),
+                    child: Container(
+                      alignment: Alignment.bottomRight,
+                      child: MediaQuery.removePadding(context: context,
+                          child: IconButton(
+                            icon: Icon(Icons.delete), iconSize: 30,
+                            onPressed: () {},
+                          )),
+                    ),
                   )
                 ],)
           ), Container(
@@ -110,28 +98,22 @@ class Home extends StatelessWidget {
                   children: <Widget>[
                     Align(
                       alignment: Alignment(0.3, -0.9),
-                      child: Text('Fats requirement ', style: TextStyle(
+                      child: Text('What is the powerhouse of the cell ', style: TextStyle(
                         fontSize: 20.0, fontFamily: 'Indie',
                         fontWeight: FontWeight.bold,),
                       ),),
                     Align(
                       alignment: Alignment(-0.9, -0.5),
-                      child: Text("Calories: 25%-35%",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
+                      child: Text("Mitochondria",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),),
                     Align(
-                      alignment: Alignment(-0.9, 0.3),
-                      child: Text(" Grams per day: 75g-100g",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                    ),
-                    Align(
-                      alignment: Alignment(-0.9, 0.1),
-                      child: Text(" Ex: Cheese,red meat",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                    ),
-                    Align(
-                      alignment: Alignment(1.0,0.9),
-                      child: MediaQuery.removePadding(context: context,
-                          child: IconButton(
-                            icon: Icon(Icons.delete), iconSize: 30,
-                            onPressed: () {},
-                          )),
+                      child: Container(
+                        alignment: Alignment.bottomRight,
+                        child: MediaQuery.removePadding(context: context,
+                            child: IconButton(
+                              icon: Icon(Icons.delete), iconSize: 30,
+                              onPressed: () {},
+                            )),
+                      ),
                     ),
                   ]
               )
@@ -145,25 +127,23 @@ class Home extends StatelessWidget {
                 Align(
                   alignment: Alignment(0.3, -0.9),
                   child: Text(
-                    'Vitamins and minerals requirement ', style: TextStyle(
+                    ' What color is the sky ', style: TextStyle(
                     fontSize: 20.0, fontFamily: 'Indie',
                     fontWeight: FontWeight.bold,),
                   ),),
                 Align(
                   alignment: Alignment(-0.9, 0.3),
-                  child: Text(" Grams per day: ~10g",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
+                  child: Text("Blue",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
                 ),
                 Align(
-                  alignment: Alignment(-0.9, 0.1),
-                  child: Text(" Ex: Fruits and green leafy veggies",style: TextStyle(fontFamily: 'Nerko',fontSize: 18.0,),),
-                ),
-                Align(
-                  alignment: Alignment(1.0,2.0),
-                  child: MediaQuery.removePadding(context: context,
-                      child: IconButton(
-                        icon: Icon(Icons.delete), iconSize: 30,
-                        onPressed: () {},
-                      )),
+                  child: Container(
+                    alignment: Alignment.bottomRight,
+                    child: MediaQuery.removePadding(context: context,
+                        child: IconButton(
+                          icon: Icon(Icons.delete), iconSize: 30,
+                          onPressed: () {},
+                        )),
+                  ),
                 ),
               ],
             ),),
@@ -175,7 +155,7 @@ class Home extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(Icons.home, color: Colors.black,), label: "Home"),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info, color: Colors.black,), label: "About",),
+            icon: Icon(Icons.info, color: Colors.black,), label: "Practice",),
         ],
       ),
 
@@ -188,6 +168,5 @@ class Home extends StatelessWidget {
     );
   }
 }
-
 
 
